@@ -9,6 +9,138 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    /* Navbar styling */
+    .stickynav {
+      overflow: hidden;
+      background-color: #3F403F;
+      width: 100%;
+      color: white;
+      position: relative;
+      top: 0px;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      float: right;
+      font-size: 18px;
+      padding: 20px 30px;
+      display: block;
+      transition: all 0.3s ease 0s;
+
+    }
+
+    nav a:hover {
+      background-color: #474A46;
+      color: #9FB8AD;
+    }
+
+    /*-----HEADER----*/
+    header {
+      background-color: #475841;
+      text-align: center;
+      padding: 15px;
+      width: 100%;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    header h1 {
+      margin: 0px;
+      padding: 5px;
+      font-size: 30px;
+      color: #E6E8E6;
+      font-weight: 600;
+      font-family: 'Raleway', sans-serif;
+
+    }
+
+    h1 span {
+      font-weight: 400;
+    }
+
+    .navheader {
+      color: #9FB8AD;
+    }
+
+    /*----BODY and CONTENT----*/
+    body {
+      background-color: #ced0ce;
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 40px;
+      padding-bottom: 9px;
+    }
+
+    /* h4 {
+
+} */
+
+    .about-section {
+      padding: 145px 50px;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight: lighter;
+    }
+
+    .statement {
+      padding-bottom: 50px;
+      text-align: center;
+      /* font-family: 'Raleway', sans-serif; */
+    }
+
+    .logo-section {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .logos {
+      display: inline-block;
+      width: 523px;
+      margin: 15px;
+      padding: 20px 20px;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .footer {
+    position: relative;
+    width: 100%;
+    background-color: #6B6D6B;
+    text-align: center;
+    color: white;
+    height:200px;
+  }
+  .fa {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .fa:hover {
+    opacity: 0.5;
+  }
+  </style>
 </head>
 
 <body>
@@ -18,9 +150,9 @@
   </header>
   <div class="stickynav">
     <nav>
-      <a href="login.html">login</a>
-      <a href="about.html">about</a>
-      <a href="index.html">home</a>
+      <a href="/login">login</a>
+      <a href="/about">about</a>
+      <a href="/">home</a>
     </nav>
   </div>
 
@@ -66,13 +198,5 @@
       </div>
     </section>
   </main>
-
-
-
-
-
-
-
 </body>
-
 </html>

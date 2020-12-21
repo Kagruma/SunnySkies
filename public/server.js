@@ -9,8 +9,9 @@ const users = [];
 const app = express();
 
 app.use(express.urlencoded({ extended: false })) //tells the application to take the login forms and be able to access them in our request variables inside the post method
-app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname + './public')));
 const port = process.env.port || 6060;
+// app.use(express.static('public'));
 
 // API space (coming)
 
@@ -39,20 +40,20 @@ app.get('/register', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-  res.sendFile('/login.html', { root: __dirname })
+  res.sendFile('/about.html', { root: __dirname })
 });
 
 
 app.post('/login', (req, res) => {
-  
+
   const username = req.body.username;
   const password = req.body.password;
   if (users.username !== username) {
-    res.redirect('/login');
-  } else if (users.password !== password){
-    res.redirect('/login')
+    res.redirect('/login.html', { root: __dirname });
+  } else if (users.password !== password) {
+    res.redirect('/login.html', { root: __dirname })
   } else {
-    res.redirect('/')
+    res.redirect('/index.html', { root: __dirname })
   }
 })
 
@@ -66,9 +67,9 @@ app.post('/register', async (req, res) => {
       username: req.body.username,
       password: hashedPassword
     })
-    res.redirect('/login')
+    res.redirect('/login.html', { root: __dirname })
   } catch {
-    res.redirect('/register')
+    res.redirect('/register.html', { root: __dirname })
   }
   console.log(users);
 })
