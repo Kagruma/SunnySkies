@@ -46,9 +46,9 @@ app.get('/about', (req, res) => {
 
 app.post('/login', (req, res) => {
 
-  const username = req.body.username;
+  // const username = req.body.username;
   const password = req.body.password;
-  if (users.username !== username) {
+  if (users.username !== req.body.username) {
     res.redirect('/login');
   } else if (users.password !== password) {
     res.redirect('/login')
