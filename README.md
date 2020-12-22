@@ -15,7 +15,7 @@ Clone or download this repo onto your local machine. Once you have done this,
 install the node packages. You can do this by running npm i on your command line tool.
 
 
-# Required dependecies :
+# Required dependecies:
 -Bycrypt - A library to help you hash passwords.
 
 -Express & Express Router - Used to create endpoints
