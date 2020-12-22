@@ -2,6 +2,15 @@
 This is an app to find the weather in your local area. 
 
 # How to Use:
+First clone the repo to your computer
+the folder comes with a package.json file which contains all the dependencies
+To get the modules running start with:
+
+- npm init -y
+- npm install
+- npm nodemon <file name> (to start the server)
+
+
 In order to use it, you need to type the city name that you live in.
 
 This app is a group class project. 
