@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: false })) //tells the application to take the login forms and be able to access them in our request variables inside the post method
 app.use(express.static(path.join(__dirname + './public')));
-const port = process.env.port || 6060;
+const port = process.env.port || 7000;
 // app.use(express.static('public'));
 
 // API space (coming)
@@ -49,11 +49,11 @@ app.post('/login', (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
   if (users.username !== username) {
-    res.redirect('/login.html', { root: __dirname });
+    res.redirect('/login');
   } else if (users.password !== password) {
-    res.redirect('/login.html', { root: __dirname })
+    res.redirect('/login')
   } else {
-    res.redirect('/index.html', { root: __dirname })
+    res.redirect('/')
   }
 })
 
@@ -67,7 +67,7 @@ app.post('/register', async (req, res) => {
       username: req.body.username,
       password: hashedPassword
     })
-    res.redirect('/login.html', { root: __dirname })
+    res.redirect('/login')
   } catch {
     res.redirect('/register.html', { root: __dirname })
   }

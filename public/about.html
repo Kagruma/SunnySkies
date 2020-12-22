@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunny Skies | About us</title>
-  <link rel="stylesheet" href="about.css">
+  <!-- <link rel="stylesheet" href="about.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -20,6 +20,10 @@
         width: 100%;
         display: block;
       }
+      .logos {
+        width: 200px;
+      }
+      
     }
 
     /* Navbar styling */
@@ -113,7 +117,8 @@
 
     .logos {
       display: inline-block;
-      width: 523px;
+      width: 500px;
+      max-width: 300px;
       margin: 15px;
       padding: 20px 20px;
       align-items: center;
@@ -122,24 +127,24 @@
     }
 
     .footer {
-    position: relative;
-    width: 100%;
-    background-color: #6B6D6B;
-    text-align: center;
-    color: white;
-    height:200px;
-  }
-  .fa {
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .fa:hover {
-    opacity: 0.5;
-  }
+  position: relative;
+  width: 100%;
+  background-color: #3F403F;
+  text-align: center;
+  color: white;
+  height:200px;
+  top: 900px;
+}
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.fa:hover {
+  opacity: 0.5;
+}
   </style>
 </head>
 
@@ -198,5 +203,14 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <a href="https://twitter.com"  title="Twitter" class="fa fa-twitter"></a>
+  <a href="https://www.facebook.com/" title="Facebook" class="fa fa-facebook"></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram" title="Instagram"></a>
+  <h5>FAQ</h5>
+  <h5>Customer service Hotline:(123)-456-789</h5>
+  <h5>Help</h5>
+  <h5 style="text-align: center;">©Sunny skies, All Rights Reserved 2020</h5>
+  </footer>
 </body>
 </html>
